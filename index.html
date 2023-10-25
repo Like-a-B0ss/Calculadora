@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <label for="select">Selecione a operação:</label>
+    <select id="select">
+        <option value="1">Soma</option>
+        <option value="2">Divisão</option>
+        <option value="3">Multiplicação</option>
+        <option value="4">Subtração</option>
+     
+    </select><br><br>
+
+    <label for="um">Digite o valor 1:</label>
+    <input type="number" id="um"><br><br>
+
+    <label for="dois">Digite o valor 2:</label>
+    <input type="number" id="dois"><br><br>
+
+    <button onclick="calcular()">Calcular</button><br><br>
+
+    <button class="auto" onclick="destruir()">Auto-Destruição</button><br><br>
+
+    <p>Resultado: <span id="resultado"></span></p>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
